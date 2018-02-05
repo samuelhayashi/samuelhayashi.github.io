@@ -1,0 +1,71 @@
+.edge-nav {
+  div, a {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 100px;
+    width: 140px;
+    height: 140px;
+    position: fixed;
+  }
+  .right-nav, .left-nav {
+    top: 50%;
+    margin-top: -70px;
+    z-index: 1000;
+    a {
+      top: 50%;
+      margin-top: -50px;
+      border: 20px solid rgba(232, 47, 237, 0.05);
+      width: 100px;
+      height: 100px;
+      -webkit-transition-duration: .5s;
+      -moz-transition-duration: .5s;
+      z-index: 1001;
+      >span {
+        top: 50%;
+        margin-top: -24px;
+        font-size: 30px;
+        color: #AA79B0;
+        position: fixed;
+        opacity: 0;
+      }
+      .edge-nav-arrow {
+        font-size: 25px;
+        vertical-align: text-bottom;
+      }
+      &:hover {
+        margin-top: -70px;
+        width: 140px;
+        height: 140px;
+        background-color: rgba(232, 47, 237, 0.1);
+        border: 40px solid rgba(0, 0, 0, 0.01);
+        >span {
+          opacity: 1;
+          transition: opacity 1s ease-in-out;
+        }
+      }
+    }
+  }
+  .left-nav {
+    left: -70px;
+    a {
+      left: -50px;
+      span {
+        left: 11px;
+      }
+      &:hover {
+        left: -70px;
+      }
+    }
+  }
+  .right-nav {
+    right: -70px;
+    a {
+      right: -50px;
+      span {
+        right: 11px;
+      }
+      &:hover {
+        right: -70px;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.comments-area {
+  width: $size__content;
+  padding: $size__content-padding;
+  margin: 0 auto;
+  @include breakpoint($maxwidth__content) {
+    width: 100%;
+  }
+}
+
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}
